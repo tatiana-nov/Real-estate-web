@@ -1,0 +1,76 @@
+.form {
+  background: #FFFFFF;
+  box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 29px;
+  height: 58px;
+  transition: box-shadow 0.2s ease-in;
+}
+.form--active {
+  box-shadow: 0px 17px 42px #F78434;
+}
+
+.form_label {
+  position: relative;
+  display: flex;
+  padding-left: 72px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.form_label::before {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 19px;
+  background-image: url("../../img/icons/mail.svg");
+  background-size: initial;
+}
+
+.form_button {
+  display: inline-block;
+  width: 158px;
+  background-color: #F78434;
+  border-radius: 29px;
+  height: 58px;
+  color: white;
+}
+.form_button:hover {
+  background-color: #f7ab74;
+  transition-duration: 500ms;
+}
+.form_button--white {
+  width: 172px;
+  background-color: #ffffff;
+  color: black;
+}
+.form_button--white:hover {
+  background-color: #c4c4c4;
+}
+.form_button--white--play {
+  padding-left: 30px;
+  position: relative;
+}
+.form_button--white--play::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url(./../../img/icons/play.svg);
+  background-size: initial;
+  background-repeat: no-repeat;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form_input {
+  flex-grow: 1;
+  margin-right: 3px;
+}
+.form_input::placeholder {
+  color: #BBBBBB;
+}

@@ -1,0 +1,35 @@
+.nav {
+  padding-top: 35px;
+  padding-bottom: 33px;
+}
+
+.nav_row {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.logo img {
+  margin-right: 5px;
+}
+
+.navigation ul {
+  display: flex;
+}
+.navigation li:not(:last-child) {
+  margin-right: 42px;
+}
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+}
+.navigation a.active, .navigation a:hover {
+  color: #f78434;
+  font-weight: 700;
+}
